@@ -1,0 +1,400 @@
+<!-- --﷽-- -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>food-website</title>
+    <link
+      rel="shortcut icon"
+      href="./images/title-logo.png"
+      type="image/x-icon"
+    />
+
+    <!-- ----linked font awesome cdn---- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- ----linked style.css and dropdown.css file---- -->
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="stylesheet" href="./public/css/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/slider.css">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ----linked media.css file---- -->
+    <link rel="stylesheet" href="./public/css/media.css" />
+  </head>
+  <body>
+    <!-- ====markup header element==== -->
+    <header class="header">
+      <!-- ---header logo--- -->
+      <div class="header-logo">
+        
+        <img src="./images/logo-img.png" alt="logo" />
+
+      </div>
+
+      <!-- ---navigation--- -->
+      <nav class="navbar">
+        <ul>
+          <li class="scroll-to-section">
+            <a class="active" href="#home">beranda</a>
+          </li>
+          
+          <li class="scroll-to-section">
+            <a href="#about">tentang kami</a>
+          </li>
+          <div class="dropdown">
+            <button onmouseenter="myFunction()" class="dropbtn">Menu Pilihan</button>
+            <div id="myDropdown" class="dropdown-content">
+            
+              <a href="#pilihan" style="font-size: 14px">Rekomendasi Menu</a>
+              <a href="#popular" style="font-size: 14px">Menu Popular</a>
+              <a href="#gallery" style="font-size: 14px">Galeri Makanan</a>
+
+            </div>
+          </div>
+
+          </li>
+          <li class="scroll-to-section">
+            <a href="#order">pesanan</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- ---menu bar--- -->
+      <div id="menu-bar" class="fas fa-bars"></div>
+    </header>
+
+    <!-- ====markup main element==== -->
+
+    <main>
+      <!-- ====markup home section==== -->
+      <section id="home" class="home">
+
+         <div class="home-desc">
+          <h1>Makanan dan Pelayanan yang terbaik, memberikan kepuasan pelanggan</h1>
+          <p>
+           Pelanggan sangat dimanjakan dengan kenikmatan rasa, suasana yang nyaman dan keramah tamahan pelayanan kami
+           yang terbaik.
+          </p> 
+         </div>
+
+         <div class="home-image">
+          <img src="./images/home-img.png" alt="Net Error" />
+         </div>
+  
+      </section>
+
+      <!-- ====markup about section==== -->
+      <section id="about" class="about">
+       
+         <div class="about-image">
+          <img src="./images/about-frame-img.png" alt="" />
+         </div>
+
+         <div class="about-desc">
+          <h2>tentang kami</h2>
+          <p>
+            Kami resto yang sudah berpengalaman lebih dari 20 tahun dengan
+            menu masakan lokal dan internasional.
+          </p>
+          <p>
+            Aneka rasa dan kenikmatan masakan kami yang diolah dari bahan pilihan
+            dan natural yang didukung dengan tenaga ahli dengan inovasi dan kreatif.
+          </p>
+         </div>
+
+      </section>
+
+      <!-- ====markup about section==== -->
+      <section id="pilihan" class="menu">
+        <h2>Rekomendasi<span>Menu</span></h2>
+        <div class="catagory">
+          <input type="button" value="breakfast" />
+          <input type="button" class="active" value="lunch" />
+          <input type="button" value="dinner" />
+          <input type="button" value="desert" />
+        </div>
+
+        <div class="catagory-img">
+          <img id="c-img" src="./images/menu-lunch.jpg" alt="Net Error" />
+        </div>
+
+        <!-- ---info content 01--- -->
+        <div class="menu-content">
+          <div class="info">
+            <h3><span>01.</span>Kami selalu terdepan dalam masalah rasa dan selera</h3>
+            <p>
+              Yang Inovatif dan kreatif.
+            </p>
+          </div>
+
+          <!-- ---info content 02--- -->
+          <div class="info">
+            <h3><span>02.</span>Kami memberikan yang terbaik di seluruh negeri</h3>
+            <p>
+              Pelanggan merupakan mitra yang perlu dilayani dengan baik.
+            </p>
+          </div>
+
+          <!-- ---info content 03--- -->
+          <div class="info">
+            <h3><span>03.</span>Kami mengelola dengan bahan natural dan bergizi</h3>
+            <p>
+              Dengan bahan pilihan dan terkontrol.
+            </p>
+          </div>
+
+          <!-- ---info content 04--- -->
+          <div class="info">
+            <h3><span>04.</span>Kami memiliki tenaga ahli dengan predikat terbaik</h3>
+            <p>
+              Menggunakan teknologi pangan yang terus dikembangkan.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====markup popular section==== -->
+     <section id="popular" class="popular">
+       <h2>Menu<span>Popular</span></h2>
+
+       <div class="popular-content">
+       
+          <!-- ---card 01--- -->
+          <div class="p-card">
+            <img src="./images/product-1.jpg" alt="Net Error" />
+            <h4>Ayam Tepung</h4>
+            <div class="review">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="price">Rp 150.000,-</p>
+           
+          </div>
+
+          <!-- ---card 02--- -->
+          <div class="p-card">
+            <img src="./images/product-2.jpg" alt="Net Error" />
+            <h4>Minuman</h4>
+            <div class="review">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="price">Rp 50.000,-</p>
+           
+          </div>
+
+          <!-- ---card 03--- -->
+          <div class="p-card">
+            <img src="./images/product-3.jpg" alt="Net Error" />
+            <h4>Salad</h4>
+            <div class="review">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="price">Rp 100.000,-</p>
+           
+          </div>
+
+          <!-- ---card 04--- -->
+          <div class="p-card">
+            <img src="./images/product-4.jpg" alt="Net Error" />
+            <h4>Mie Lokal</h4>
+            <div class="review">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="price">Rp 75.000,-</p>
+          
+          </div>
+        
+        </div>
+      </section>
+
+      <!-- ====markup gallery section==== -->
+      <section id="gallery" class="gallery">
+        <h2>Galeri <span>makanan</span></h2>
+
+    
+        <div class=coding-slider>
+          <div class=isi-slider>
+          
+           <img src="./images/img1.jpg" alt="Net Error" />
+           <img src="./images/img2.jpg" alt="Net Error" />
+           <img src="./images/img3.jpg" alt="Net Error" />
+           <img src="./images/img4.jpg" alt="Net Error" />
+           <img src="./images/img5.jpg" alt="Net Error" />
+           <img src="./images/img6.jpg" alt="Net Error" />
+   
+           </div>
+         </div>
+
+
+        <div class="gallery-content">
+          <!-- ---gallery card 01--- -->
+          <div class="g-card">
+            <img src="./images/img1.jpg" alt="Net Error" />
+            <h3>kue basah</h3>
+          </div>
+
+          <!-- ---gallery card 02--- -->
+          <div class="g-card">
+            <img src="./images/img2.jpg" alt="Net Error" />
+            <h3>sate</h3>
+          </div>
+
+          <!-- ---gallery card 03--- -->
+          <div class="g-card">
+            <img src="./images/img3.jpg" alt="Net Error" />
+            <h3>roti telor</h3>
+          </div>
+
+          <!-- ---gallery card 04--- -->
+          <div class="g-card">
+            <img src="./images/img4.jpg" alt="Net Error" />
+            <h3>ayam kentang</h3>
+          </div>
+
+          <!-- ---gallery card 05--- -->
+          <div class="g-card">
+            <img src="./images/img5.jpg" alt="Net Error" />
+            <h3>jus buah</h3>
+          </div>
+
+          <!-- ---gallery card 06--- -->
+          <div class="g-card">
+            <img src="./images/img6.jpg" alt="Net Error" />
+            <h3>roti kue</h3>
+          </div>
+        </div>
+
+   
+      </section>
+
+      <!-- ====markup gallery section==== -->
+      <section id="order" class="order">
+        <h2>Membuat <span>Pesanan</span></h2>
+
+        <div class="order-content">
+          <form action="#" class="order-form" autocomplete="off">
+            <input type="text" placeholder="nama" required />
+            <input type="email" placeholder="email" required />
+            <input type="password" placeholder="kata sandi" required />
+            <input type="number" placeholder="nomor HP" required />
+            <textarea cols="30" rows="8" placeholder="alamat"></textarea>
+
+            <button type="submit">Pesan Sekarang</button>
+          </form>
+          <section class="courses">
+            <article>
+             <figure>
+              <img src="./images/form-img.jpg" alt="Net Error" />
+              <figcaption><b>Chocolate Cake</b></figcaption>
+             </figure>
+             <hgroup>
+              <h2>Resto Makanan</h2>
+              <h3>Berbagai Jenis Makanan Tradisional dan Internasional</h3>
+            </hgroup>
+            <p>Makanan khas Indonesia dan Internasional yang banyak digemari masyarakat umum dengan cita rasa dan kualitas yang sudah teruji.</p>
+            </article>
+           </section>
+         </div>
+        </section>
+
+        <!-- <section class="courses">
+         <article>
+          <figure>
+           <img src="./images/form-img.jpg" alt="Net Error" />
+           <figcaption><S>Resto Makanan Enak</S></figcaption>
+          </figure>
+         </article>
+        </section> -->
+     
+    </main>
+
+    <!-- ====markup footer element==== -->
+    <footer class="footer">
+
+       <!-- ====markup Aside element==== -->
+      <aside class="">
+        <img src="./images/Avatar.jpeg" alt="Net Error" />
+        <h2><b>Contact Info : </b></h2>
+        <h3><p><span>Rumah Makan ABCDE</span></p>
+            <p><span>abcde@gmail.com</span></p>
+            <p><span>+62-xxxx xxxx xxxx</span></p>
+        </h3>
+      </aside>
+
+      <div class="location">
+        <h4>Lokasi Cabang</h4>
+        <ul>
+          <li><p style="font-size: 14px; -webkit-text-fill-color: beige;">Jakarta</p></li>
+          <li><p style="font-size: 14px; -webkit-text-fill-color: beige;">Bekasi</p></li>
+          <li><p style="font-size: 14px; -webkit-text-fill-color: beige;">Depok</p></li>
+          <li><p style="font-size: 14px; -webkit-text-fill-color: beige;">Bogor</p></li>
+          <li><p style="font-size: 14px; -webkit-text-fill-color: beige;">Tangerang</p></li>
+          <li><p style="font-size: 14px; -webkit-text-fill-color: beige;">Bandung</p></li>
+        </ul>
+      </div>
+
+      <div class="quick-links">
+        <h4>link cepat</h4>
+        <ul>
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#about">Tentang kami</a></li>
+          <li><a href="#pilihan">Rekomendasi Menu</a></li>
+          <li><a href="#popular">Menu Popular</a></li>
+          <li><a href="#gallery">Galeri Makanan</a></li>
+          <li><a href="#order">Pesanan</a></li>
+        </ul>
+      </div>
+
+      <div class="follow-us">
+        <h4>Kontak kami</h4>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com" target="blank">facebook</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com" target="blank">instagram</a>
+          </li>
+          <li><a href="https://www.twitter.com" target="blank">twitter</a></li>
+          <li><a href="https://www.linkedin.com" target="blank">linkedin</a></li>
+          <li>
+            <a href="https://wa.me/62895411990357?text=Saya%20ingin%20pesan%20dong..." target="blank">Whatsapp</a>
+          </li>
+        </ul>
+      </div>
+
+      
+      <div class="copyright">
+        <p>Copyright 2023 || &copy all right reserved.</p>
+      </div>
+    </footer>
+
+    <!-- ----linked main.js and dropdown.js file---- -->
+    <script src="./public/js/main.js"></script>
+    <script src="./public/js/dropdown.js"></script>
+  </body>
+</html>
