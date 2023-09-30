@@ -1,1 +1,1 @@
-# simple_front_end
+# Simple Front End using HTML, CSS and JavaScript
